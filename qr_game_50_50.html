@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quét QR - Nhận kết quả</title>
+<style>
+body{font-family:Arial,sans-serif;text-align:center;background:#f4f0ff;margin:0;padding:40px 20px}
+.box{max-width:420px;margin:auto;background:white;padding:35px 20px;border-radius:20px;box-shadow:0 5px 20px #0002}
+h1{font-size:28px}
+button{font-size:20px;padding:14px 25px;border:0;border-radius:12px;background:#6c4cff;color:white}
+#result{font-size:25px;font-weight:bold;margin-top:30px;min-height:60px}
+</style>
+</head>
+<body>
+<div class="box">
+<h1>🎁 Thử vận may!</h1>
+<p>Bấm nút để nhận kết quả</p>
+<button onclick="play()">MỞ KẾT QUẢ</button>
+<div id="result"></div>
+</div>
+<script>
+function play(){
+  if(Math.random() < 0.5){
+    document.getElementById("result").textContent="🍬 Bạn được một cục kẹo!";
+  }else{
+    document.getElementById("result").textContent="🍀 Chúc bạn may mắn lần sau!";
+  }
+}
+</script>
+</body>
+</html>
